@@ -988,7 +988,7 @@
 
                 // Show loading state
                 loginSubmitBtn.disabled = true;
-                loginSubmitBtn.innerText = '⏳ Saving...';
+                loginSubmitBtn.innerText = '⏳ verifying user';
 
                 // Save to Firestore
                 db.collection('userLogins').add({
