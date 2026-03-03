@@ -737,7 +737,7 @@
 
             // ---------- FALLING ELEMENTS ----------
             function openingBurst() {
-                const allSymbols = ['❤️', '🌟', '💝', '🌹', '🏵️', '🫧', '🍓', '🎁', '✨', '⭐', '🌸', '💫'];
+                const allSymbols = ['❤️', '🌟', '💝', '🌹', '🧧', '🫧', '🎈', '🎁', '✨', '⭐', '🎉', '🎊'];
                 const burstCount = 70;
                 for (let i = 0; i < burstCount; i++) {
                     setTimeout(() => {
@@ -759,7 +759,7 @@
             }
 
             function startGentleDrift() {
-                const gentleSymbols = ['🫧', '❤️'];
+                const gentleSymbols = ['🫧', '❤️','🧧','🎈'];
                 setInterval(() => {
                     const count = Math.random() < 0.3 ? 2 : 1;
                     for (let i = 0; i < count; i++) {
@@ -897,7 +897,7 @@
                         setTimeout(() => {
                             const burst = document.createElement('div');
                             burst.className = 'particle';
-                            const burstSymbols = ['❤️', '🌟', '💝', '🌹', '🏵️', '🫧', '🍓', '🎁', '✨', '⭐', '🌸', '💫'];
+                            const burstSymbols = ['❤️', '🌟', '💝', '🌹', '🏵️', '🫧', '🎈', '🎁', '✨', '🧧', '🎊', '🎉'];
                             burst.innerText = burstSymbols[Math.floor(Math.random() * burstSymbols.length)];
                             burst.style.left = Math.random() * 100 + '%';
                             burst.style.top = (30 + Math.random() * 50) + '%';
